@@ -1,8 +1,21 @@
 plugins {
     id 'java-library'
+    id 'maven-publish'
 }
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            maven(MavenPublication) {
+                groupId = 'com.github.jeff-liu14'
+                artifactId = project.name
+                version = '0.1'
+            }
+        }
+    }
 }
