@@ -1,3 +1,3 @@
-rootProject.name = "SimplerRouter"
+rootProject.name = "SRouterAnnotation"
 include ':app'
 include ':srouter-annotation'
