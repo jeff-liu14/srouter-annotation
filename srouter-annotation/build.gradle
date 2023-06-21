@@ -14,7 +14,7 @@ afterEvaluate {
             maven(MavenPublication) {
                 groupId = 'com.github.jeff-liu14'
                 artifactId = project.name
-                version = '0.1'
+                version = LIB_VERSION_NAME
             }
         }
     }
